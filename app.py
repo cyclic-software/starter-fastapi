@@ -1,5 +1,3 @@
-from typing import Optional
-
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
 
@@ -10,7 +8,6 @@ app = FastAPI()
 
 class Item(BaseModel):
     item_id: int
-    name: Optional[str] = None
 
 
 @app.get("/")
