@@ -1,9 +1,9 @@
+from typing import Optional
+
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
 
 from pydantic import BaseModel
-
-from typing import Optional
 
 app = FastAPI()
 
