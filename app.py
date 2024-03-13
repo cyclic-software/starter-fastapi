@@ -10,9 +10,14 @@ class Item(BaseModel):
     item_id: int
 
    
+# @app.get("/")
+# async def read_index():
+#     return FileResponse("index.html")
+
+
 @app.get("/")
 async def read_index():
-    return FileResponse("index.html")
+    return FileResponse("Hello Aleksandr Sergeevich")
 
 
 @app.get('/favicon.ico', include_in_schema=False)
