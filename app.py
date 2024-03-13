@@ -9,11 +9,7 @@ app = FastAPI()
 class Item(BaseModel):
     item_id: int
 
-
-# @app.get("/")
-# async def root():
-#     return {"message": "Hello Aleksandr Sergeevich"}
-    
+   
 @app.get("/")
 async def read_index():
     return FileResponse("index.html")
